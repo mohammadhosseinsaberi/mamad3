@@ -411,15 +411,43 @@
     <footer id="footer" class="section footer">
         <div class="w-container">
             <div class="form-wrapper w-form">
-                <form name="email-form" data-name="Email Form" id="email-form" method="get"
-                    data-wf-page-id="69f21effd06e0aa51ddf2e15" data-wf-element-id="10e0b33f-b7bf-6f7e-7b31-afaeb14012c0"
-                    data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><input class="field darker w-input"
-                        maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="field"
-                        required="" /><input class="field w-input" maxlength="256" name="email" data-name="Email"
-                        placeholder="Email" type="email" id="field" required="" /><textarea
-                        placeholder="How can we help.." maxlength="5000" required="" name="comments"
-                        data-name="Comments" id="field" class="field large w-input"></textarea><input type="submit"
-                        data-wait="Please wait..." class="button form w-button" value="Send Message" /></form>
+                <form action="https://formspree.io/f/xqeodojb" method="POST" id="email-form" name="email-form">
+
+
+                        <input
+                            class="field darker w-input"
+                            maxlength="256"
+                            name="name"
+                            placeholder="Name"
+                            type="text"
+                            required
+                        />
+                    
+                        <input
+                            class="field w-input"
+                            maxlength="256"
+                            name="email"
+                            placeholder="Email"
+                            type="email"
+                            required
+                        />
+                    
+                        <textarea
+                            class="field large w-input"
+                            maxlength="5000"
+                            name="message"
+                            placeholder="How can we help.."
+                            required
+                        ></textarea>
+                    
+                        <button
+                            type="submit"
+                            class="button form w-button">
+                            Send Message
+                        </button>
+                    
+                    </form>
+
                 <div class="success-message w-form-done">
                     <h1>Thank you!</h1>
                     <p>Your submission has been received!</p>
